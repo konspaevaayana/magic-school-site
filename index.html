@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arcanum</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:100;
+    padding:25px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:4px;
+}
+
+.logo span{
+    color:#d9b26f;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:40px;
+    letter-spacing:2px;
+    font-size:14px;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.65)),
+    url("https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1800");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+    
+	.hero{
+    height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.65)
+    ),
+    url("хогвартс.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    max-width:700px;
+}
+
+.hero-small{
+    color:#d9b26f;
+    letter-spacing:8px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:90px;
+    line-height:1;
+    margin-bottom:25px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#ddd;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 50px;
+    border:2px solid #d9b26f;
+    color:#d9b26f;
+    text-decoration:none;
+    letter-spacing:3px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#d9b26f;
+    color:black;
+}
+
+/* HOUSES */
+
+.houses{
+    padding:120px 8%;
+    background:#141414;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.section-title p{
+    color:#d9b26f;
+    letter-spacing:5px;
+    margin-bottom:10px;
+}
+
+.section-title h2{
+    font-size:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.card{
+    border:1px solid rgba(255,255,255,.15);
+    padding:60px 30px;
+    text-align:center;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#d9b26f;
+}
+
+.circle{
+    width:70px;
+    height:70px;
+    border:1px solid rgba(255,255,255,.3);
+    border-radius:50%;
+    margin:auto;
+    margin-bottom:30px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#d9b26f;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#bbb;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:black;
+    color:#777;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:60px;
+}
+
+.cards{
+    grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:600px){
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+nav{
+    display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<span>✦</span> ARCANUM
+</div>
+
+<nav>
+<a href="#">HOME</a>
+<a href="#">HOUSES</a>
+<a href="#">CONTACTS</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-small">
+EST. MXLII
+</div>
+
+<h1>
+School<br>
+of Magic
+</h1>
+
+<p>
+Where ancient arts meet wisdom.
+A place for those who seek the extraordinary.
+</p>
+
+<a href="#" class="btn">
+APPLY
+</a>
+
+</div>
+
+</section>
+
+<section class="houses">
+
+<div class="section-title">
+<p>THE FOUR</p>
+<h2>Houses</h2>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<div class="circle">G</div>
+<h3>Gryffindor</h3>
+<p>The Lion</p>
+</div>
+
+<div class="card">
+<div class="circle">S</div>
+<h3>Slytherin</h3>
+<p>The Serpent</p>
+</div>
+
+<div class="card">
+<div class="circle">R</div>
+<h3>Ravenclaw</h3>
+<p>The Eagle</p>
+</div>
+
+<div class="card">
+<div class="circle">H</div>
+<h3>Hufflepuff</h3>
+<p>The Badger</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Arcanum School of Magic
+</footer>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Контакты -->
+        <div class="footer-column">
+            <h3>CONTACTS</h3>
+
+            <div class="footer-item">
+                📍 <span>1 Arcanum Way, Edinburgh</span>
+            </div>
+
+            <div class="footer-item">
+                📞 <span>+44 131 000 0000</span>
+            </div>
+
+            <div class="footer-item">
+                ✉️ <span>admissions@arcanum.edu</span>
+            </div>
+        </div>
+
+        <!-- Соцсети -->
+        <div class="footer-column">
+            <h3>FOLLOW US</h3>
+
+            <div class="footer-item">
+                🐦 <a href="#">@ArcanumSchool</a>
+            </div>
+
+            <div class="footer-item">
+                📷 <a href="#">arcanum.school</a>
+            </div>
+
+            <div class="footer-item">
+                ▶️ <a href="#">Arcanum Official</a>
+            </div>
+        </div>
+
+        <!-- Логотип -->
+        <div class="footer-column footer-brand">
+            <h2>✦ ARCANUM</h2>
+            <p>School of Magic</p>
+            <p class="copyright">© 2026 School of Magic</p>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
